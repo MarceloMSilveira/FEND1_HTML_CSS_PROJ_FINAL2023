@@ -1,4 +1,5 @@
 @import "card.css";
+@import "navbar.css";
 
 .container{
     display: grid;
