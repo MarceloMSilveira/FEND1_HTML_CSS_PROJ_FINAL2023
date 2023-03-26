@@ -4,12 +4,13 @@
 
 .container{
     display: grid;
-    grid-template-columns: 30vw 70vw;
-    grid-template-rows: 3em 1fr 2em;
+    grid-template-columns: 95vw;
+    grid-template-rows: 3em 3fr 1fr 2em;
     grid-template-areas: 
-    "hd hd"
-    "sd main"
-    "ft ft";
+    "hd"
+    "main"
+    "sd"
+    "ft";
     gap: 3px;
 }
 
@@ -31,14 +32,14 @@
 
 .nestedGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: 1fr;
     gap: 5px;
 }
 
-@media (min-width:500px) and (max-width:849px){
+@media (min-width:550px) and (max-width:849px){
     .container{
         display: grid;
-        grid-template-columns: 30vw 70vw;
+        grid-template-columns: 25vw 65vw;
         grid-template-rows: 3em 1fr 2em;
         grid-template-areas: 
         "hd hd"
@@ -46,17 +47,27 @@
         "ft ft";
         gap: 3px;
     }
+    .nestedGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 5px;
+    }
 }
 
 @media (min-width:850px) {
     .container{
         display: grid;
-        grid-template-columns: 30vw 70vw;
+        grid-template-columns: 25vw 65vw;
         grid-template-rows: 3em 1fr 2em;
         grid-template-areas: 
         "hd hd"
         "sd main"
         "ft ft";
         gap: 3px;
+    }
+    .nestedGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 5px;
     }
 }
