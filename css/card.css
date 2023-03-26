@@ -1,4 +1,7 @@
 .card {
     display: grid;
-    grid-template-rows: max-content 200px 1fr;
+    grid-template-rows: 1fr 6fr 2fr 1fr;
+}
+img {
+    width: 100%;
 }
