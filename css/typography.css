@@ -1,0 +1,6 @@
+#mainTitle{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    margin: 2px;
+}
